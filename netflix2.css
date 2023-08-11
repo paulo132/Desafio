@@ -1,0 +1,268 @@
+body,
+html{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #000 35.42%, #8F0022 100%);;
+
+    background-size: 300% 100%;
+    animation: anima  1s  infinite alternate;
+
+}
+
+header{
+    padding: 15px 3%;
+}
+
+.logo{                  /*netflix*/
+    width: 92px;
+    height: 91px;
+    transition: 0.5s;   
+}
+
+.logo:hover{
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+    transform: translateY(-4px) translateX(-2px);
+}
+
+.logo2{                 /*card batman*/
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    transition: 0.5s; 
+}
+
+.logo2:hover{
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+    transform: translateY(-4px) translateX(-2px);
+}
+
+.logo3{               /*card mina*/
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    transition: 0.5s; 
+}
+
+.logo3:hover{
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+    transform: translateY(-4px) translateX(-2px);
+}
+
+.logo4{                 /*card panda*/
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    transition: 0.5s; 
+}
+
+.logo4:hover{
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+    transform: translateY(-4px) translateX(-2px);
+}
+
+.logo5{                /*card galo*/
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.logo5:hover{
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+    transform: translateY(-4px) translateX(-2px);
+}
+
+.logo-mais{           /* card + (mais) */
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 10em;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+.logo-mais:hover{
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+    transform: translateY(-4px) translateX(-2px);
+}
+
+.todos-logos{          /*todos os card e tbm o card + (mais) */
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 200px;
+    cursor: pointer;
+    
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+    
+}
+
+.perfil{                /*todos os H1 */
+    text-align: center;
+}
+
+@media screen and  (max-width: 870px) {
+  body,
+  html{
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(180deg, #000 35.42%, #8F0022 100%);;
+  
+      background-size: 300% 100%;
+      animation: anima  1s  infinite alternate;
+      display: flex;
+       justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  
+  }
+
+  .todos-logos{          /*todos os card e tbm o card + (mais) */
+    justify-content:space-evenly;
+    margin-top: 200px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    
+}
+
+.logo{                  /*netflix*/
+  width: 92px;
+  height: 91px;
+  transition: 0.5s;   
+}
+
+.logo2{                 /*card batman*/
+  width: 90px;
+  height:90px;
+  flex-shrink: 0;
+  border-radius:25px;
+  transition: 0.5s; 
+}
+
+.logo3{               /*card mina*/
+  width:90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  transition: 0.5s; 
+}
+  
+.logo4{                 /*card panda*/
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  transition: 0.5s; 
+}
+
+.logo5{                /*card galo*/
+    width: 90px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.logo-mais{           /* card + (mais) */
+  width: 90px;
+  height:90px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 10em;
+  border-radius: 50%;
+  transition: 0.5s;
+
+}
+}
+
+
+
+       /*animaçao de fundo */
+
+/* @keyframes anima {            
+    0%{
+        background-position-x: 0%;
+    }
+    
+    100%{
+        background-position-x: 100%;
+    }
+} */
+
+
+        /* Outra animaçao de fundo */
+
+
+        /* html,
+        body {
+          height: 100%;
+        }
+        
+        body {
+          background: radial-gradient(ellipse at center, #fffeea 0%, #fffeea 35%, #b7e8eb 100%);
+          overflow: hidden;
+        }
+        
+        .ocean {
+          height: 5%;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: #015871;
+        }
+        
+        .wave {
+          background: url(https://cdn.kcak11.com/codepen_assets/wave_animation/wave.svg) repeat-x;
+          position: absolute;
+          top: -198px;
+          width: 6400px;
+          height: 198px;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+          transform: translate3d(0, 0, 0);
+        }
+        
+        .wave:nth-of-type(2) {
+          top: -175px;
+          animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+          opacity: 1;
+        }
+        
+        @keyframes wave {
+          0% {
+            margin-left: 0;
+          }
+          100% {
+            margin-left: -1600px;
+          }
+        }
+        @keyframes swell {
+          0%,
+          100% {
+            transform: translate3d(0, -25px, 0);
+          }
+          50% {
+            transform: translate3d(0, 5px, 0);
+          }
+        }
+        .endWave{
+          display:none;
+        } */

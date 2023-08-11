@@ -1,0 +1,163 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #0D0507 0%, #CF0536 95.33%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    padding-top: 15px;
+}
+
+.logo {
+    width: 92px;
+    height: 91px;
+    flex-shrink: 0;
+    transition: 0.5s;
+}
+
+.logo:hover {
+    /* box-shadow:inset 10px 15px #CF0536; */
+    filter: drop-shadow(1px 15px 45px rgb(230, 1, 1));
+
+}
+
+.gif {
+    width: 345px;
+    height: 209px;
+    flex-shrink: 0;
+    border-radius: 54px;
+    background: url(<path-to-image>), rgb(3, 0, 0) 50% / cover no-repeat;
+}
+
+input {
+    width: 500px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    font-size: 25px;
+    /* border: 3px solid #000; */
+
+
+}
+
+.input-todos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-enter {
+    width: 300px;
+    height: 55px;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 2em;
+    background-color: #0D0507;
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(239, 6, 6),
+        0 0 25px rgb(254, 6, 23);
+
+}
+
+.botao-enter:hover {
+    color: #CF0536;
+    box-shadow: 0 0 5px rgb(255, 1, 60),
+        0 0 25px rgb(255, 3, 3), 0 0 50px rgb(251, 3, 61),
+        0 0 100px rgb(255, 2, 2), 0 0 200px rgb(255, 8, 8);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+                             /* Responsivel */
+
+@media screen and  (max-width: 870px) {
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        background-image: linear-gradient(180deg, #0D0507 0%, #CF0536 95.33%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    
+    
+    }
+
+    .input-todos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+
+    .logo {
+        width: 70px;
+        height: 91px;
+        flex-shrink: 0;
+        transition: 0.5s;
+    }
+
+    .gif {
+        width: 175px;
+        height: 109px;
+        flex-shrink: 0;
+        border-radius: 54px;
+        background: url(<path-to-image>), rgb(3, 0, 0) 50% / cover no-repeat;
+    }
+
+    input {
+        width: 300px;
+        height: 35px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        font-size: 25px;
+        /* border: 3px solid #000; */
+    
+    
+    }
+    
+    .botao-enter {
+        width: 200px;
+        height: 35px;
+        border-radius: 35px;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: #0D0507;
+        color: white;
+        margin-top: 50px;
+        cursor: pointer;
+        box-shadow: inset 0 0 5px rgb(239, 6, 6),
+            0 0 25px rgb(254, 6, 23);
+    
+    }
+  } 
+
+
+
+/* .input-barra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+} */
+
+
